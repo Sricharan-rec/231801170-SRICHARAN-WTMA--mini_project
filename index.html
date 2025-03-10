@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="form">
+        <h2>Signup Form</h2>
+        <form onsubmit="return validateForm()">
+            <label>First Name:</label>
+            <input type="text" id="firstName"><span id="firstNameError" class="error"></span><br>
+
+            <label>Last Name:</label>
+            <input type="text" id="lastName"><span id="lastNameError" class="error"></span><br>
+
+            <label>Email:</label>
+            <input type="text" id="email"><span id="emailError" class="error"></span><br>
+
+            <label>Date of Birth:</label>
+            <input type="date" id="dob"><span id="dobError" class="error"></span><br>
+
+            <label>Age:</label>
+            <input type="text" id="age"><span id="ageError" class="error"></span><br>
+
+            <div class="gen-align">
+                <label>Gender:</label><br>
+                <label><input type="radio" name="gender" value="Male"> Male</label>
+                <label><input type="radio" name="gender" value="Female"> Female</label>
+                <small id="genderError" class="text-danger"></small>
+            </div>
+            
+            
+
+            <label>Phone Number:</label>
+            <input type="text" id="phoneNumber"><span id="phoneNumberError" class="error"></span><br>
+
+            <label>Address:</label>
+            <textarea id="address" rows="4"></textarea><span id="addressError" class="error"></span><br>
+
+            <button type="submit">Signup</button>
+        </form>
+    </div>
+</body>
+</html>
